@@ -1,17 +1,22 @@
 Major Previous Shifts in IT:
 
-1. Mainframe-to-PC wave where we shifted from a traditional mainframe architecture that had been around for many, many years to a PC distributed architecture where we're putting in Mac and Windows and DOS. We were changing out our networks and putting in fiber Ethernet and Ethernet 10base-t and TCP/IP.
-2. Baremetal-to-Virtual where In the data center and in our servers, we were shifting to virtualization because servers were too powerful, and had a lot of idle time, and we needed to get better utilization. So, we started creating a lot of OS's inside a single piece of hardware. That was virtualization. VMware, Hyper-V and all that stuff.
-3. Datacentre-to-Cloud where we had around easy, cheap, disposable compute power that we could spin up and shut down really quickly from a website. It was never that easy and on that level of scale.
-4. Host-to-Container where containers would also include serverless, or functions-as-a-service if you've heard of that technology because all those things were made possible by containers and run inside containers to do their work.
+1. Mainframe-to-PC: where we shifted from a traditional mainframe architecture that had been around for many, many years to a PC distributed architecture where we're 
+                    putting in Mac and Windows and DOS. We were changing out our networks and putting in fiber Ethernet and Ethernet 10base-t and TCP/IP.
+2. Baremetal-to-Virtual: where In the data center and in our servers, we were shifting to virtualization because servers were too powerful, and had a lot of idle time, and we 
+                         needed to get better utilization. So, we started creating a lot of OS's inside a single piece of hardware. That was virtualization. VMware, Hyper-V 
+                         and all that stuff.
+3. Datacentre-to-Cloud: where we had around easy, cheap, disposable compute power that we could spin up and shut down really quickly from a website. It was never that easy 
+                        and on that level of scale.
+4. Host-to-Container: where containers would also include serverless, or functions-as-a-service if you've heard of that technology because all those things were made possible 
+                      by containers and run inside containers to do their work.
 
 Problem in previous technologies:
-
-they were really just built purely for sysadmins, not so much for developers but this solution is an inclusive solution that includes developers, build engineers, testers, operators, sysadmins and everyone in between.
+they were really just built purely for sysadmins, not so much for developers but this solution is an inclusive solution that includes developers, build engineers, testers, 
+operators, sysadmins and everyone in between.
 
 Why do you need Docker? What is the REAL BENEFIT?
-
-It's is all about speed. In fact, all these major shifts in infrastructure have always been about speed. About the speed of software deployments, the speed of business and getting things done in a company for profit. Big benefits in areas like:
+It's is all about speed. In fact, all these major shifts in infrastructure have always been about speed. About the speed of software deployments, the speed of business and 
+getting things done in a company for profit. Big benefits in areas like:
 1. Develop Faster
 2. Build Faster
 3. Test Faster
