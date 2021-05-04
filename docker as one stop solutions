@@ -32,7 +32,6 @@ If you don't have containers today, you're probably dealing with something like 
 4. User DB
 5. Analytics DB
 6. Queue
-
 frontend, backend, workers, middle tier. You've got a lot of different things that all need to work together to run your software. Those all will have their own dependencies, 
 their own requirements. They might even run on different operating systems or different clouds. Then you have them running on:
 1. Desktop (developer machines)
@@ -44,11 +43,13 @@ their own requirements. They might even run on different operating systems or di
 7. Windows server
 8. Edge devices
 
-the ways of dealing with that is that containers are consistent across the board. It allows packaging the same way regardless of OS. It allows to distribution of the software 
-regardless of the setup. It allows you to run and test the software the same way everywhere like Mac, Windows, PC, cloud, data center, edge devices. They all run the same way 
-fundamentally when they're using Docker, and it makes a lot of the pain problems around the software life cycle much easier to deal with. The reason that we care so much 
-about this is that if you've been here long enough, you know that we have created tons and tons of software in the last 50 years. All the software that we've developed on 
-mainframes, which is a lot of it's still around, PCs and now on in the Cloud. All this stuff requires maintenance. We're now saying that 80% of the time of a typical IT 
-person is spent managing that existing software. Keeping it updated. Keeping it running. Fixing its problems. Backing it up. All those various things of existing software. 
-This leaves very little time left for us to make new things, right, and to deploy new software. So, Docker is freeing up a lot of those tasks of the maintenance of stuff and 
-allowing us to get more of our time back to innovate.
+the ways of dealing with that is that containers are consistent across the board.
+It allows:
+1. packaging the same way regardless of OS
+2. distribution of the software regardless of the setup.
+2. It allows you to run & test the software the same way everywhere like Mac, Windows, cloud, data center. They all run the same way fundamentally when they're using Docker.
+3. it makes a lot of the pain problems around the software life cycle much easier to deal with.
+The reason that we care so much about this is that we have created tons of software in the last 50 years. All the software that we've developed on mainframes, which is a lot 
+of it's still around, PCs and now on in the Cloud, requires maintenance. Approx. 80% of the time of a typical IT person is spent managing the existing software, Keeping it 
+updated, running, Fixing its problems, Backing it up. All those various things of existing software. This leaves very little time left to make new things, right, and to 
+deploy new software. So, Docker is freeing up a lot of those tasks of the maintenance of stuff and allowing us to get more of our time back to innovate.
