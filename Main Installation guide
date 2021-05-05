@@ -1,0 +1,29 @@
+Docker Desktop WSL 2 backend :
+Windows Subsystem for Linux (WSL) 2 introduces a significant architectural change as it is a full Linux kernel built by Microsoft, allowing Linux containers to run natively 
+without emulation. With Docker Desktop running on WSL 2, users can leverage Linux workspaces and avoid having to maintain both Linux and Windows build scripts. In addition, WSL2
+provides improvements to file system sharing, boot time, and allows access to some cool new features for Docker Desktop users.
+
+Docker Desktop uses the dynamic memory allocation feature in WSL 2 to greatly improve the resource consumption. This means, Docker Desktop only uses the required amount of CPU 
+and memory resources it needs, while enabling CPU and memory-intensive tasks such as building a container to run much faster.
+Additionally, with WSL 2, the time required to start a Docker daemon after a cold start is significantly faster. It takes less than 10 seconds to start the Docker daemon when 
+compared to almost a minute in the previous version of Docker Desktop.
+
+1>> Prerequisites : Before you install the Docker Desktop WSL 2 backend, you must complete the following steps:
+                (1). Install Windows 10, version 1903 or higher.
+                (2). Enable WSL 2 feature on Windows. For detailed instructions, refer to the Microsoft documentation( https://docs.microsoft.com/en-us/windows/wsl/install-win10 )
+                (3). Download and install the Linux kernel update package.
+
+***NOTES: Troubleshooting installation: (https://docs.microsoft.com/en-us/windows/wsl/install-win10#troubleshooting-installation)
+Error: WSL 2 requires an update to its kernel component. In other words, If the Linux kernel package is missing in the %SystemRoot%\system32\lxss\tools folder, you will 
+       encounter this error. Resolve it by installing the Linux kernel update MSI package in step #4 of these installation instructions. You may need to uninstall the MSI from 
+       'Add or Remove Programs', and install it again.
+Resolve: (1). Download the Linux kernel update package, please visit "https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package".
+         (2). Run the update package downloaded in the previous step.
+         (3). After installation the next step is setting WSL 2 as your default version when installing new Linux distributions:
+              wsl --set-default-version 2 -> To Set WSL 2 as your default version
+2>> Select the "Use WSL 2 based engine" box (If you have installed Docker Desktop on a system that supports WSL 2, this option will be enabled BY DEFAULT). Click Apply & Restart.
+3>> Ensure the distribution runs in WSL 2 mode.
+    "wsl.exe -l -v" or "wsl -l -v" -> To check the WSL mode
+4>> When Docker Desktop restarts, go to "Settings > Resources > WSL Integration". The Docker-WSL integration will be enabled on your default WSL distribution.
+    **NOTES : wsl --set-default <distro name> -> To change your default WSL distro e.g., wsl --set-default ubuntu -> to set Ubuntu as your default WSL distro
+5>> Click Apply & Restart.
